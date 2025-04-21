@@ -1,0 +1,54 @@
+/* components/CSVButton/CSVButton.module.css */
+.csvButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center; /* Center horizontally */
+  width: 100%; /* Take full width of parent */
+  margin: 10px 0; /* Add some vertical margin */
+}
+
+.fileInput {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.csvButton {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #add8e6; /* Light blue */
+  color: #333;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid #96c8d9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.csvButton:hover {
+  background-color: #99ccff;
+}
+
+.uploadButton {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+  background-color: #45a049;
+}
